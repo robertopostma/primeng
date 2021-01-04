@@ -1,10 +1,10 @@
-<h3>Frozen Columns</h3>
+<h3>Frozen Columns - example</h3>
 <p-table [columns]="scrollableCols" [frozenColumns]="frozenCols" [value]="cars" [scrollable]="true" scrollHeight="200px" frozenWidth="200px">
   <ng-template pTemplate="colgroup" let-columns>
     <colgroup>
-      <col *ngFor="let col of columns" style="width:200px">
+        <col *ngFor="let col of columns" style="width:200px"><!-- stel hier breedte van de scrollable cols in -->
     </colgroup>
-  </ng-template>
+</ng-template>
   <ng-template pTemplate="header" let-columns>
     <tr>
       <th *ngFor="let col of columns">
@@ -16,6 +16,14 @@
     <tr>
       <td *ngFor="let col of columns">
         {{rowData[col.field]}}
+      </td>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="footer"  let-columns>
+    <tr>
+      <td *ngFor="let col of columns">
+        Totaal
       </td>
     </tr>
   </ng-template>
