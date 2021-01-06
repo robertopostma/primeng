@@ -26,6 +26,13 @@ export class TableScrollDemo implements OnInit {
             { field: 'color', header: 'Color' },
             { field: 'year', header: 'Year' },
             { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
+            { field: 'brand', header: 'Brand' },
             { field: 'color', header: 'Color' }
         ];
 

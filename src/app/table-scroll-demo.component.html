@@ -2,7 +2,7 @@
 <p-table [columns]="scrollableCols" [frozenColumns]="frozenCols" [value]="cars" [scrollable]="true" scrollHeight="200px" frozenWidth="200px">
   <ng-template pTemplate="colgroup" let-columns>
     <colgroup>
-        <col *ngFor="let col of columns" style="width:200px"><!-- stel hier breedte van de scrollable cols in -->
+        <col *ngFor="let col of columns" style="width:60px"><!-- stel hier breedte van de scrollable cols in -->
     </colgroup>
 </ng-template>
   <ng-template pTemplate="header" let-columns>
