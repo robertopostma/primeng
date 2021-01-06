@@ -1,6 +1,8 @@
 <div style="background-color:lightgrey; width:1000px;">
   <b>Problem description: Layout is broken when I only have a limited number of rows</b>
+  
   <ul>
+    <li>I used this link as a basis (but converted to the latest primeng version): <a target="primeNGTarget" href="https://stackblitz.com/edit/angular-primeng-table-frozen-columns">https://stackblitz.com/edit/angular-primeng-table-frozen-columns</a></li>
     <li>See below 2 tables: the 1st one looks "great", the second one has a 'broken layout'.</li>
     <li>Click <a target="_blank" href="assets/TableLayoutIncorrect.png">here</a> to see a picture of the problem
       (I added it to be sure the problem is visible). </li>
@@ -8,10 +10,11 @@
     <li>I seem to be able to 'fix' it by playing with scrollHeight property of p-table, however the number of rows that
       will end-up in my table is 'dynamic'
     </li>
-<li>My expectation is that I could set scrollHeight to 500px even if I only have 2 records (...). then I would expect no scrollbar 
-  (and a non-broken layout)
-</li>
-<li>How can this be fixed?</li>
+    <li>My expectation is that I could set scrollHeight to 500px even if I only have 2 records (...). then I would
+      expect no scrollbar
+      (and a non-broken layout)
+    </li>
+    <li>How can this be fixed?</li>
   </ul>
 </div>
 
@@ -81,4 +84,3 @@
     </tr>
   </ng-template>
 </p-table>
-
