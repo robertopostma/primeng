@@ -8,14 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { TableScrollDemo } from './table-scroll-demo.component';
-import { BudgetComponent } from './budget/budget.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-	TableScrollDemo,
-	BudgetComponent
+	TableScrollDemo
+	
   ],
   imports: [
     BrowserModule,

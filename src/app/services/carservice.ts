@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 
 import { Car } from '../domain/car';
-import { IBudgetRegel } from "../interfaces/IBudgetregel";
 
 @Injectable()
 export class CarService {
@@ -17,26 +16,11 @@ export class CarService {
           .pipe(map(res => <Car[]> res.data));
     }
 
-    getBudgetTotalen(){
+    getCarsSmall() {
         return this.http
-        .get<{data: IBudgetRegel[]}>('assets/data/totalen.json')
-        .pipe(map(res => <IBudgetRegel[]> res.data));
-
+          .get<{data: Car[];}>('assets/data/cars-small.json')
+          .pipe(map(res => <Car[]> res.data.slice(1,3)));
     }
 
-
-    getBudgetInkomsten(){
-        return this.http
-        .get<{data: IBudgetRegel[]}>('assets/data/inkomsten.json')
-        .pipe(map(res => <IBudgetRegel[]> res.data));
-
-    }
-
-
-    getBudgetUitgaven(){
-        return this.http
-        .get<{data: IBudgetRegel[]}>('assets/data/uitgaven.json')
-        .pipe(map(res => <IBudgetRegel[]> res.data));
-
-    }
+   
 }
